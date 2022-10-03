@@ -1,0 +1,13 @@
+.Head{
+    background-color: black;
+    padding: 10px 0;
+    color: white;
+}
+.Head i{
+    margin-right: 10px;
+}
+.Head label{
+    margin-right: 30px;
+    font-size: 13px;
+}
+/* -----------------------------head--------------- */
