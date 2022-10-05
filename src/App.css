@@ -14,7 +14,7 @@ body{
 }
 .container{
     max-width: 90%;
-    margin: 0;
+    margin: auto;
 }
 .d-flex{
     display: flex;
@@ -25,6 +25,86 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+.f-flex{
+    display: flex;   
+}
+.search-box{
+    width: 500px;
+    display: flex;
+}
+.Search{
+    padding-top: 18px;
+    justify-content: space-between;
+    margin-left: 11rem;
+}
+.search-btn{
+    width: 20%;
+    height: 38px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: black;
+    color: white;
+    text-transform: capitalize;
+    font-size: 10px;
+    position: absolute;
+    left: 80%;
+}
+.icon a{
+    justify-content: space-between;
+    display: inline-flex;
+}
+.icon a img{
+    width: 30px;
+}
+.order a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+.order ul li{
+    list-style: none;
+    margin-right: 30rem;
+}
+.order img{
+    width: 30px;
+}
+.icon a h4{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    transition: .5s;
+}
+.icon a h4:hover{
+    opacity: 1;
+    color: rgb(218, 83, 135);
+}
+.icon a{
+    text-decoration: none;
+}
 
+.icon{
+    padding-top: 20px;
+}
+.RText{
+    text-align: right;
+}
+.cart{
+    margin-top: 20px;
+    margin-left: 1px;
+}
+.cart a{
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+.sei{
+    background-color: red;
+    margin-left: 2rem;
+}
+.ssea{
+    width: 20px;
+}
 
 

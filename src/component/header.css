@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:    'Fira Sans', sans-serif;
+}
 .Head{
     background-color: black;
     padding: 10px 0;
@@ -10,4 +16,57 @@
     margin-right: 30px;
     font-size: 13px;
 }
-/* -----------------------------head--------------- */
+
+.Logo h3{
+font-size: 20px;
+padding: .5rem;
+margin-left: 4rem;
+color: palevioletred;
+/* right:30px */
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Home{
+    font-size: 13px;
+    margin: auto;
+    padding: .5rem;
+}
+.header{
+    background-color: #fff;
+}
+.navbars{
+    margin-left: 60rem;
+    padding: 1rem;
+   
+}
+
+.containers {
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid white;
+}
+.link{
+    text-transform: capitalize;
+    padding:0 10px;
+    margin: 5 5px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    transition: .5s;
+}
+.link:hover{
+    opacity: 1;
+    color: rgb(218, 83, 135);
+}
