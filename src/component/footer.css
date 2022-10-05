@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+.footer-container{
+    background: black;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 25% 20% 20% 20% 15%;
+    color: #ddd;
+    position: relative;
+    top: 50rem;
+
+
+    
+}
+p span{
+    display: block;
+    font-size: 1.5rem;
+}
+.footer-title{
+    color: #eee;
+    font-size: 1.8rem;
+}
+
+.copyright
+.contactus-column{
+    color: #ddd;
+    font-size: 1.5rem;
+}
+.footer-container a:link,
+.footer-container a:visited{
+    color: #eee;
+    font-size: 1.6rem;
+}
+.footer-container a:hover,
+.footer-container a:active{
+    color: #ccc;
+}
+.logo-img{
+    width:20%;
+    height: 40%;
+    position: relative;
+    left: 1rem;
+    top:1rem
+
+   
+    
+}
+.copyright{
+    font-size: 1rem;
+}
+h2{
+    position: relative;
+    left: 10rem;
+    top:1rem
+}
+.logo-footer{
+    position: relative;
+    bottom: 0.1rem;
+    left: 20rem;
+    display: block;
+    display: inline-block;
+   
+}
+p{
+    font-size: 1rem;
+}
+.copy{
+    position: relative;
+    left: 50rem;
+}
