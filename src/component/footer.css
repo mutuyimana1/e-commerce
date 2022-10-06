@@ -1,79 +1,94 @@
-*{
+*,*::after,*::before{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
+    
 }
 html{
     font-size: 62.5%;
 }
 body{
     font-family: "Roboto",sans-serif;
+    box-sizing: border-box;
 }
-.footer-container{
+.footer{
     background: black;
     padding: 2rem;
-    display: grid;
-    grid-template-columns: 25% 20% 20% 20% 15%;
     color: #ddd;
+    width: 100%;
     position: relative;
     top: 50rem;
+    
+}
+.footer-container{
+   
+    display: grid;
+    grid-template-columns: 25% 20% 20% 20% 15%;
+    width: 100%;
+    
+   
 
 
     
 }
 p span{
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 .footer-title{
     color: #eee;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .copyright
 .contactus-column{
     color: #ddd;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 .footer-container a:link,
 .footer-container a:visited{
-    color: #eee;
-    font-size: 1.6rem;
+    color: pink;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 .footer-container a:hover,
 .footer-container a:active{
     color: #ccc;
 }
-.logo-img{
-    width:20%;
-    height: 40%;
-    position: relative;
-    left: 1rem;
-    top:1rem
+.footer-logo{
+    display:flex;
+   gap:2rem;
+   align-items:center;
+   justify-content:flex-end;
+   margin-bottom: 2rem;
 
-   
+}
+/* .logo-img-container{
     
+} */
+.logo-img{
+   height:5rem;
+ 
+  
+
+     
+}
+.log-img{
+    border-radius: 50%;
+    /* width: 60%; */
+    height: 15rem;
 }
 .copyright{
     font-size: 1rem;
 }
-h2{
-    position: relative;
-    left: 10rem;
-    top:1rem
-}
-.logo-footer{
-    position: relative;
-    bottom: 0.1rem;
-    left: 20rem;
-    display: block;
-    display: inline-block;
-   
-}
+
 p{
     font-size: 1rem;
 }
-.copy{
-    position: relative;
-    left: 50rem;
+h6{
+  
+    /* left: 50rem; */
+    text-align: center;
+    font-size: 1rem;
 }
