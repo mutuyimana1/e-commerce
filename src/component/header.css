@@ -29,6 +29,7 @@ color: black;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-top: 3px solid black;
 }
 .Home{
     font-size: 13px;
@@ -36,7 +37,7 @@ color: black;
     padding: .5rem;
 }
 .header{
-    background-color: #fff;
+    background-color: white;
 }
 .navbars{
     margin-left: 60rem;
@@ -50,23 +51,33 @@ color: black;
 }
 
 .links-container{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    padding: 10px 10vw;
-    justify-content: center;
+    color: black;
+
     list-style: none;
+}
+.links-container .link{
+    margin-left: 79px;
+}
+.links-container .link-item .link{
+    display: flex;
+    justify-content: space-between;
 }
 .link{
     text-transform: capitalize;
-    padding:0 10px;
-    margin: 5 5px;
     text-decoration: none;
     color: black;
-    opacity: 0.5;
-    transition: .5s;
-
 }
 .link:hover{
-    opacity: 1;
-    color: rgb(218, 83, 135);
+    transform: .5s;
+    color: rgba(156, 14, 62, 0.808);
+    opacity: .8s;
+}
+.Logo-img img{
+    border-radius: 70%;
+    width:30%;
+    height: 50%;
+    margin-left: 50px;
+
 }

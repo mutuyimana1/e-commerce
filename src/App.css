@@ -63,15 +63,15 @@ body{
    
 }
 .icon a h4{
-    color: black;
     position: fixed;
     bottom: 78%;
     font-size: 16px;
 
 }
 .icon  h4{
-    padding-bottom: 17px;
+    padding-bottom: 8px;
     margin-left: 5px;
+    color: black;
 }
 .icon a img{
     width: 30px;
@@ -89,9 +89,8 @@ body{
     width: 30px;
 }
 .icon a h4{
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
-    color: black;
     opacity: 0.5;
     transition: .5s;
     gap: 2rem;

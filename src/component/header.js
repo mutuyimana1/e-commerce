@@ -7,6 +7,7 @@ import order from "../assets/order.png";
 import SearchIcon from '@mui/icons-material/Search';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
+import Logo from "../assets/log-removebg-preview.png"
 
 
 const Header = ()=>{
@@ -70,7 +71,7 @@ const Header = ()=>{
                 <i className="fa fa-phone"></i>
                 <label>+250785214483</label>
                 <i className="fa fa-envelope"></i>
-                <label>XXX@gmail.com</label>
+                <label>ecommerce@gmail.com</label>
                 </div> 
             </div>
           </section>
@@ -78,8 +79,8 @@ const Header = ()=>{
           {/* ---------------------Navbar-------------- */}
           <header className="header">
             <div className="navbar">
-                <div className="Logo">
-                  <h3>RetailerShop</h3>
+                <div className="Logo-img">
+                  <img src={Logo} alt=""></img>
                 </div>
                 <section className="Search">
                  <Search>
