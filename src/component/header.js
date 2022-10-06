@@ -25,7 +25,7 @@ const Header = ()=>{
       marginLeft: theme.spacing(3),
       width: '',
       border:'1px solid black',
-     
+      
     },
   }));
   const SearchIconWrapper = styled('div')(({ theme }) => ({
@@ -36,6 +36,7 @@ const Header = ()=>{
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    
     
   }));
   const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -93,17 +94,17 @@ const Header = ()=>{
           </Search>
           </section>
           <div className="icon">
-          <a href="#"><img src={user}></img><h4>Login <br></br> joinforfree</h4></a> 
-          <a href="#"><img src={cart}></img><h4 className="cart">Cart</h4></a>
-          <a href="#"><img src={order}></img><h4 className="cart">order</h4></a>
+          <a href="#"><img src={user}></img><h4>Login</h4></a> 
+          <a href="#"><img src={cart}></img><h4>Cart</h4></a>
+          <a href="#"><img src={order}></img><span></span><h4 >order</h4></a>
           </div>           
           
             </div>
-            {/* <ul className="links-container">
+            <ul className="links-container">
               <li className="link-item"><a href="#" className="link">Home</a></li>
               <li className="link-item"><a href="#" className="link">ContactUs</a></li>
               <li className="link-item"><a href="#" className="link">Shipping</a></li>
-            </ul> */}
+            </ul>
           </header>
        
             </>

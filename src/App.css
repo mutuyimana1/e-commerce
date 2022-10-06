@@ -33,9 +33,12 @@ body{
     display: flex;
 }
 .Search{
-    padding-top: 18px;
+   padding-bottom: 20px;
     justify-content: space-between;
-    margin-left: 11rem;
+    /* margin-left: 11rem; */
+    padding-right:0.5rem;
+    position: absolute;
+    right: 450px;
 }
 .search-btn{
     width: 20%;
@@ -54,9 +57,25 @@ body{
 .icon a{
     justify-content: space-between;
     display: inline-flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+    /* padding-bottom: 30px; */
+   
+}
+.icon a h4{
+    color: black;
+    position: fixed;
+    bottom: 78%;
+    font-size: 16px;
+
+}
+.icon  h4{
+    padding-bottom: 17px;
+    margin-left: 5px;
 }
 .icon a img{
     width: 30px;
+    padding-bottom: 48px;
 }
 .order a{
     text-decoration: none;
@@ -75,6 +94,7 @@ body{
     color: black;
     opacity: 0.5;
     transition: .5s;
+    gap: 2rem;
 }
 .icon a h4:hover{
     opacity: 1;
@@ -82,29 +102,18 @@ body{
 }
 .icon a{
     text-decoration: none;
+    padding: 1rem;
+    padding-left: 20px;
 }
 
 .icon{
     padding-top: 20px;
+    padding-right: 8rem;
+    justify-content: space-between;
 }
 .RText{
     text-align: right;
 }
-.cart{
-    margin-top: 20px;
-    margin-left: 1px;
-}
-.cart a{
-    text-decoration: none;
-    outline: none;
-    list-style: none;
-}
-.sei{
-    background-color: red;
-    margin-left: 2rem;
-}
-.ssea{
-    width: 20px;
-}
+
 
 
