@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:    'Fira Sans', sans-serif;
+}
 .Head{
     background-color: black;
     padding: 10px 0;
@@ -10,4 +16,117 @@
     margin-right: 30px;
     font-size: 13px;
 }
-/* -----------------------------head--------------- */
+
+.Logo h3{
+font-size: 20px;
+padding: .2px;
+padding-bottom:30px ;
+margin-left: 4rem;
+color: black;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    /* background:red; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 3px solid black;
+}
+.Home{
+    font-size: 13px;
+    margin: auto;
+    padding: .5rem;
+}
+.header{
+    background-color: white;
+}
+.navbars{
+    margin-left: 60rem;
+    padding: 1rem;
+   
+}
+
+.containers {
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.links-container{
+    /* width: 100%; */
+    display: flex;
+    color: black;
+   flex-wrap: wrap;
+
+    list-style: none;
+}
+.links-container .link{
+    margin-left: 5rem;
+}
+.links-container .link-item .link{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6rem;
+}
+.link{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    transform: .5s;
+    color: rgba(156, 14, 62, 0.808);
+    opacity: .8s;
+}
+.Logo-img img{
+    border-radius: 70%;
+    width:30%;
+    height: 50%;
+    margin-left: 50px;
+
+}
+@media screen and (max-width:390px){
+    .icon  h4{
+        margin-top: 100rem;
+        display: none;
+    }
+    .icon a img{
+        padding-bottom: 1rem;
+        display: none;
+
+    }
+    .Logo-img img{
+        margin-top: 1px;
+        margin-left: 10px;
+    }
+    .link{
+        margin-bottom: 1%;
+        justify-content: space-between;
+        
+    }
+    .links-container .link-item {
+        margin-bottom: 9px;
+        display: flex;
+    }
+    .container{
+        padding: 2px;
+    }
+    .RText{
+        margin-left: 1px;
+    }
+    .RText label{
+        gap: 1px;
+        margin-right: 20px;
+    }
+    .phone i {
+        margin-left: 30px;
+        padding-top: 2px;
+    }
+    .phone label{
+        margin-left: 20px;
+    }
+    .eco{
+        padding-left: 1px;
+    }
+    
+}
