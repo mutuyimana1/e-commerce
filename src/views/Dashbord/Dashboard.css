@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Dash{
+background-color: black;
+color: white;
+width: 200px;
+height: 100vh;
+padding-top: 25px;
+}
+.wof{
+    size: 30px;
+    color: pink;
+}
+ListItemText{
+    font-size: 30px;
+}
+.man{
+    color: white;
+    font-size: 2rem;
+}
+.dish{
+    font-size: 16px;
+    text-align: center;
+}
+.send{
+    color: rgb(248, 145, 163);
+    width: 30px;
+    height: 3vh;
+}
+.snd{
+    color: white;
+    width: 30px;
+    height: 6vh;
+}
+.snd{
+    position: absolute;
+    top: 25rem;
+    left: 20px;
+}
+.wf{
+    position: absolute;
+    top: 26.5rem; 
+    left: 80px;
+    font-size: 20px;
+}
+.sending{
+    background-color: white;
+    width: 30px;
+    height: 3vh;
+   position: absolute;
+   left: 18px;
+   bottom: 1rem;
+}
+.profile{
+    width: 60px;
+    height:8vh;
+    position: absolute;
+    left: 4%;
+    top: 11px;
+    border-radius: 30px;
+}
+.headings{
+    position: absolute;
+    top: 70px;
+    font-size: 16px;
+    left: 5rem;
+    color: white;
+}
+.shop{
+    position: absolute;
+    top: 90px;
+    font-size: 16px;
+    left: 2rem;
+    color: whitesmoke;
+}
+.desh{
+    padding-top: 50%;
+}

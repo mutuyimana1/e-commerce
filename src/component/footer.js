@@ -16,32 +16,32 @@ let year=d.getFullYear()
                
            </div>
            <div className="contactus-column">
-               <h3 className="footer-title">Contact-us</h3><br></br>
+               <h3 className="footer-title" style={{fontSize:"20px"}}>Contact-us</h3><br></br>
                <p>Kigali Rwanda</p>
-               <p><a href="tel:+250-785-322-071">tel:+250-785-322-071</a></p>
-               <p><a href="mailto:webmaste@example.com">info@retaliersshop.com</a></p>
-               <p><a href="#">Street No. 12m Newyork 12,</a></p>
+               <p><a href="tel:+250-785-322-071" style={{fontSize:"20px"}}>tel:+250-785-322-071</a></p>
+               <p><a href="mailto:webmaste@example.com" style={{fontSize:"20px"}}>info@retaliersshop.com</a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>Street No. 12m Newyork 12,</a></p>
            </div>
            <div className="account-column">
-               <h3 className="footer-title">My Account</h3><br></br>
-               <p><a href="#">Login</a></p>
-               <p><a href="#">Sign up</a></p>
-               <p><a href="#">My Cart</a></p>
-               <p><a href="#">About-us</a></p>
+               <h3 className="footer-title" style={{fontSize:"20px"}}>My Account</h3><br></br>
+               <p><a href="#" style={{fontSize:"20px"}}>Login</a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>Sign up</a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>My Cart</a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>About-us</a></p>
            </div>
            <div className="company-column">
-               <h3 className="footer-title">Shop</h3><br></br>
-               <p><a href="#">About Us </a></p>
-               <p><a href="#">Retailers</a></p>
-               <p><a href="#">partners</a></p>
-               <p><a href="#">Orders</a></p>
+               <h3 className="footer-title" style={{fontSize:"20px"}}>Shop</h3><br></br>
+               <p><a href="#"style={{fontSize:"20px"}}>About Us </a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>Retailers</a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>partners</a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>Orders</a></p>
            </div>
            <div className="company-column">
-               <h3 className="footer-title">Terms and Condition</h3><br></br>
-               <p><a href="#">Policies</a></p>
-               <p><a href="#">Help center</a></p>
-               <p><a href="#">privacy</a></p>
-               <p><a href="#">Support</a></p>
+               <h3 className="footer-title" style={{fontSize:"20px"}}>Terms and Condition</h3><br></br>
+               <p><a href="#" style={{fontSize:"20px"}}>Policies</a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>Help center</a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>privacy</a></p>
+               <p><a href="#" style={{fontSize:"20px"}}>Support</a></p>
             
            </div>
            
@@ -64,7 +64,7 @@ let year=d.getFullYear()
             </div>
           
 
-           <h6>copyright &copy;{year} Retailers Shop,Inc.All Rights Resrved{""}</h6>
+           <h6 style={{fontSize:"20px"}}>copyright &copy;{year} Retailers Shop,Inc.All Rights Resrved{""}</h6>
         </div>
        
         

@@ -28,10 +28,10 @@ const Header = ()=>{
     },
     marginRight: theme.spacing(2),
     marginLeft: 0,
-    width: '30rem',
+    width: '47rem',
     height:"40px",
     [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(3),
+      marginLeft: theme.spacing(8),
       width: '',
       border:'1px solid black',
       
@@ -55,9 +55,9 @@ const Header = ()=>{
       // vertical padding + font size from searchIcon
       paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create('width'),
-      width: '100%',
+      width: '110%',
       [theme.breakpoints.up('md')]: {
-        width: '20ch',
+        width: '30ch',
       },
     },
   }));
@@ -99,7 +99,7 @@ const Header = ()=>{
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              // placeholder="Search…"
               inputProps={{ 'aria-label': 'search' }}
               name="q"/>
             <button className="search-btn">Search</button>
@@ -113,7 +113,7 @@ const Header = ()=>{
           
             </div>
             <ul className="links-container">
-              <li className="link-item"><a href="#" className="link">Home</a></li>
+              <li className="link-item"><a href="/Home" className="link">Home</a></li>
               <li className="link-item"><a href="#" className="link">Products</a></li>
               <li className="link-item"><a href="#" className="link">Retailer</a></li>
               <li className="link-item"><a href="#" className="link">ContactUs</a></li>
