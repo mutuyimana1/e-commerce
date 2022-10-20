@@ -23,8 +23,9 @@ body{
 .footer-container{
    
     display: grid;
-    grid-template-columns: 25% 20% 20% 20% 15%;
+    grid-template-columns: 20% 20% 16% 15% 25%;
     width: 100%;
+    left: 10rem;
     
    
 
@@ -43,18 +44,18 @@ p span{
 
 .copyright
 .contactus-column{
-    color: #ddd;
+    color: pink;
     font-size: 1.3rem;
 }
 .footer-container a:link,
 .footer-container a:visited{
-    color: pink;
+    color: white;
     font-size: 1.2rem;
     text-decoration: none;
 }
 .footer-container a:hover,
 .footer-container a:active{
-    color: #ccc;
+    color: pink;
 }
 .footer-logo{
     display:flex;
@@ -69,6 +70,8 @@ p span{
 } */
 .logo-img{
    height:5rem;
+   gap: 2rem;
+ 
  
   
 
@@ -91,4 +94,10 @@ h6{
     /* left: 50rem; */
     text-align: center;
     font-size: 1rem;
+}
+.contactus-column p {
+font-size: 20px;
+}
+.contactus-column a{
+    font-size: 20px;
 }

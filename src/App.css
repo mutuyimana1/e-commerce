@@ -38,7 +38,7 @@ body{
     /* margin-left: 11rem; */
     padding-right:0.5rem;
     position: absolute;
-    right: 450px;
+    right: 520px;
 }
 .search-btn{
     width: 20%;
@@ -57,23 +57,19 @@ body{
 .icon a{
     display: inline-flex;
     flex-direction: column;
-    padding-left: 60%;
+    padding-left: 10%;
    
 }
-.icon a h4{
-    position: fixed;
-    bottom: 78%;
-    font-size: 16px;
-}
-.icon  h4{
-    padding-bottom: 25px;
-    margin-left: 24px;
+ a h4{
+    position: absolute;
+    bottom: 82%;
+    font-size: 20px;
     color: black;
 }
 .icon a img{
     width: 28px;
     padding-bottom: 48px;
-    margin-left: 30px;
+    margin-left: 1px;
 }
 .order a{
     text-decoration: none;
@@ -105,7 +101,7 @@ body{
 
 .icon{
     padding-top: 20px;
-    padding-right: 8rem;
+    padding-right: 15rem;
     justify-content: space-between;
 }
 .RText{
@@ -119,8 +115,8 @@ body{
     justify-content: start;
     align-items: center;
     position: absolute;
-    bottom:  29.5rem;
-    left: 4rem;
+    bottom:  49rem;
+    left: 10rem;
 }
 .menu-bars{
     margin-left: 2rem;
@@ -130,7 +126,7 @@ body{
 .nav-menu{
     background-color: black;
     width: 200px;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     position: fixed;
