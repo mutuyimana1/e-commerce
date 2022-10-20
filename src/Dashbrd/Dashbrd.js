@@ -7,6 +7,7 @@ import PeopleAltIcon from '@mui/icons-material/PeopleAlt';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import FilterFramesIcon from '@mui/icons-material/FilterFrames';
 import Paper from '@material-ui/core/Paper';
+import { Button, Card, ListItemText } from "@mui/material";
 import {
   ArgumentAxis,
   ValueAxis,
@@ -15,7 +16,8 @@ import {
   PieSeries,
   Title
 } from '@devexpress/dx-react-chart-material-ui';
-import "../views/Dashbord/Dashboard.css"
+import "../views/Dashbord/Dashboard.css";
+// import Content from "../CDashboard/Content"
 
   
  // Sample data
@@ -53,16 +55,35 @@ const View = () => {
       <PieSeries valueField="value" argumentField="argument" />
       <h1 className="categories">Sales Categories</h1>
     </Chart>
-      
+    <Card
+              sx={{
+                height: 255,
+                width: 150,
+                position:"relative",
+                left:"80rem",
+                bottom:"55rem"
+              }}
+              primary="Total Product"
+              
+            > 
+            <div className="more">
+            <h1>Electronics</h1>
+            <h1>Decoration</h1>
+            <h1>Clothes</h1>
+            <h1>Sport</h1>
+            <h1>Men-TShirt</h1>
+            <Button>MoreCategories</Button>
+            </div>
+            </Card>
     <Chart
       data={data}
-      sx={{width:"67rem",height:"5rem",position:"relative",bottom:"70rem",left:"30px"}}>
+      sx={{width:"67rem",height:"5rem",position:"relative",bottom:"98rem",left:"30px"}}>
       <ArgumentAxis />
       <ValueAxis />
   
       <BarSeries valueField="value" argumentField="argument" />
     </Chart>
-
+{/* <Content/> */}
     </DashLayout>
   );
 };
