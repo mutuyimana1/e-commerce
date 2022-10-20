@@ -22,7 +22,6 @@
 
 import {BrowserRouter,Route,Routes} from "react-router-dom";
 import Home from "./views/Home";
-import Dashboard from "./views/Dashbord/Dashboard";
 import Dashbrd from "./Dashbrd/Dashbrd";
 import AdminDashboard from "./Dashbrd/AdminDashbord"
 function App(){
@@ -31,7 +30,6 @@ function App(){
 <Routes>
 <Route exact path='/' element={<Home/>}/>
 <Route  path='/Home' element={<Home/>}/>
-<Route  path='/Dashbord' element={<Dashboard/>}/>
 <Route exact path="/Dashbrd" element={<Dashbrd/>}/>
 <Route exact path="/AdminDashbrd" element={<AdminDashboard/>}/>
 </Routes>

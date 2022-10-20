@@ -135,28 +135,26 @@ export default function NestedList(props) {
       
       <List
         sx={{
-          width: "100%",
-          maxWidth: 300,
+          width: "99%",
+          maxWidth: 360,
           // bgcolor: ["red","yellow"],
-          minHeight: ["5vh", "100vh"],
+          minHeight: ["5vh", "138vh"],
           bgcolor:"black"
         }}
         component="nav"
         aria-labelledby="nested-list-subheader"
-        subheader={
-          <ListSubheader component="div" id="nested-list-subheader">
-            Dashboard
-          </ListSubheader>
-        }
+      
       >
-        <img src={Profile} alt="" class="profile"></img><span></span>
+          <img src={Profile} alt="" class="profile"></img>
+          <ListItemText primary="ElyseShop" sx={{color:"white",position:"relative",top:"8rem",left:"10rem",size:"large"}}/>
+          <ListItemText primary="ElyseShop@gmail.com" sx={{color:"white",position:"relative",top:"8rem",left:"8rem"}}/>
         {props?.items?.map((item, index) => (
           <ListItemButton
             selected={selectedIndex === index && true}
             onClick={() => setSelectedIndex(index)}
-          >
+           sx={{position:"relative",top:"10rem",padding:"2rem"}}>
             <ListItemIcon sx={{color:"white"}}>{item.icon}</ListItemIcon>
-            <ListItemText primary={item.name} sx={{color:"white"}} />
+            <ListItemText primary={item.name} sx={{color:"white",gap:"2rem",fontsize:"2rem"}} />
           </ListItemButton>
         ))}
       </List>
