@@ -1,111 +1,3 @@
-// import * as React from 'react';
-// import { Box, Grid } from "@mui/material";
-// import Header from '../component/header';
-// import Sider from 'antd/lib/layout/Sider';
-// import ListSubheader from '@mui/material/ListSubheader';
-// import List from '@mui/material/List';
-// import ListItemButton from '@mui/material/ListItemButton';
-// import ListItemIcon from '@mui/material/ListItemIcon';
-// import ListItemText from '@mui/material/ListItemText';
-// import Collapse from '@mui/material/Collapse';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-// import DraftsIcon from '@mui/icons-material/Drafts';
-// import SendIcon from '@mui/icons-material/Send';
-// import ExpandLess from '@mui/icons-material/ExpandLess';
-// import ExpandMore from '@mui/icons-material/ExpandMore';
-// import StarBorder from '@mui/icons-material/StarBorder';
-// import Profile from "../assets/image/Profile.jpg"
-// import "../views/Dashbord/Dashboard.css";
-// import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-// import { faUser } from "@fortawesome/free-solid-svg-icons";
-// // import { FaProductHunt } from "@fortawesome/free-solid-svg-icons";
-// import {faCog} from "@fortawesome/free-solid-svg-icons";
-// import MailIcon from '@mui/icons-material/Mail';
-// import ListItem from '@mui/material/ListItem';
-// import Typography from '@mui/material/Typography';
-// import { FaProductHunt, FaUmbrella } from 'react-icons/fa';
-
-// const Dashboard =()=>{
-//     return(
-// <>
-//       <img src={Profile} alt="" class="profile"></img>
-// <List
-
-//      class="Dash">
-//       <h1 class="headings">elyseShop</h1><span></span>
-//       <h1 class="shop">elyseshop@gmail.com</h1>
-//       <div class="desh">
-
-//       <ListItemButton 
-      
-//        selected={true}>
-//         <ListItemIcon>
-//           <FontAwesomeIcon icon={faUser}class="send"  />
-//         </ListItemIcon>
-//         <ListItemText primary="Dashboard"   sx={{fontSize:"100px",color:'pink'}} />
-//       </ListItemButton>
-//       <ListItemButton 
-      
-//       >
-//         <ListItemIcon>
-//           <FontAwesomeIcon icon={faUser}class="send"  />
-//         </ListItemIcon>
-//         <ListItemText
-//                     primary="Product"
-                    
-//                   />
-//       </ListItemButton>
-//       <ListItemButton 
-      
-//       >
-//         <ListItemIcon>
-//           <FontAwesomeIcon icon={faUser}class="send"  />
-//         </ListItemIcon>
-//         <ListItemText
-//                     primary="Order"
-                    
-//                   />
-//       </ListItemButton>
-//       <ListItemButton 
-      
-//       >
-//         <ListItemIcon>
-//           <FontAwesomeIcon icon={faUser}class="send"  />
-//         </ListItemIcon>
-//         <ListItemText
-//                     primary="Checkout"
-                    
-//                   />
-//       </ListItemButton>
-//       <ListItemButton 
-      
-//       >
-//         <ListItemIcon>
-//           <FontAwesomeIcon icon={faUser}class="send"  />
-//         </ListItemIcon>
-//         <ListItemText
-//                     primary="Customer"
-                    
-//                   />
-//       </ListItemButton>
-//           <ListItemButton>
-//         <ListItemIcon>
-//           <FontAwesomeIcon icon={faCog}class="snd"  />
-//         </ListItemIcon>
-//         <ListItemText primary="setting" class="wf" />
-        
-//       </ListItemButton>
-      
-//         </div>
-        
-//     </List>
-    
-//     </>
-    
-//   );
-// };
-// export default Dashboard;
-
 import * as React from "react";
 import ListSubheader from "@mui/material/ListSubheader";
 import List from "@mui/material/List";
@@ -120,11 +12,14 @@ import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import StarBorder from "@mui/icons-material/StarBorder";
 import Profile from "../assets/image/Profile.jpg"
-import "../views/Dashbord/Dashboard.css"
+import "../views/Dashbord/Dashboard.css";
+import {useNavigate} from "react-router-dom"
+
 
 export default function NestedList(props) {
   const [open, setOpen] = React.useState(true);
   const [selectedIndex, setSelectedIndex] = React.useState(0);
+  const navigate = useNavigate();
 
   const handleClick = () => {
     setOpen(!open);
@@ -139,7 +34,12 @@ export default function NestedList(props) {
           maxWidth: 360,
           // bgcolor: ["red","yellow"],
           minHeight: ["5vh", "138vh"],
-          bgcolor:"black"
+          bgcolor:"black",
+         zIndex:"999",
+          top:"0",
+          position:"fixed",
+          justifyContent:"center",  fontSize: "14px",
+          fontWeight: 200
         }}
         component="nav"
         aria-labelledby="nested-list-subheader"
@@ -151,10 +51,16 @@ export default function NestedList(props) {
         {props?.items?.map((item, index) => (
           <ListItemButton
             selected={selectedIndex === index && true}
-            onClick={() => setSelectedIndex(index)}
-           sx={{position:"relative",top:"10rem",padding:"2rem"}}>
+            onClick={() => {
+              setSelectedIndex(index)
+              navigate (item.path);
+            }}
+            
+           sx={{position:"relative",top:"10rem",padding:"2rem" , fontSize: "14px",
+           fontWeight: 200}}>
             <ListItemIcon sx={{color:"white"}}>{item.icon}</ListItemIcon>
-            <ListItemText primary={item.name} sx={{color:"white",gap:"2rem",fontsize:"2rem"}} />
+            <ListItemText primary={item.name} sx={{color:"white",gap:"2rem", fontSize: "14px",
+            fontWeight: 200,}} />
           </ListItemButton>
         ))}
       </List>

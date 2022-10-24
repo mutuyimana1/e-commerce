@@ -1,6 +1,7 @@
 import React from "react";
 import DashLayout from "../CDashboard/Layout";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
+import Chart from "../CDashboard/chart"
 
 const items = [
   { name: "Dashboard", icon: <InboxIcon /> },
@@ -11,7 +12,7 @@ const items = [
 const View = () => {
   return (
     <DashLayout siderItems={items}>
-      <h1>Admin Dash</h1>
+       <Chart/>
     </DashLayout>
   );
 };
