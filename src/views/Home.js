@@ -4,15 +4,16 @@ import Header from "../component/header";
 import Footer from "../component/footer";
 import "../component/header.css";
 import "../App.css"
+import HomeLinks from "../component/HomeLinks";
 
 const Home=()=>{
 
     return(
         <>
         <Header/>
-        <h1>lorem in the country are good for others</h1>
-        <img src={image}></img>
-
+        {/* <h1>lorem in the country are good for others</h1>
+        <img src={image}></img> */}
+        <HomeLinks />
         <Footer/>
         </>
     )

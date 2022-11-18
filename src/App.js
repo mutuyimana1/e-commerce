@@ -4,6 +4,16 @@ import Dashbrd from "./Dashbrd/Dashbrd";
 import AdminDashboard from "./Dashbrd/AdminDashbord";
 import Product from "./Dashbrd/Product";
 import Order from "./Dashbrd/oder";
+import HomeLinks from "./component/HomeLinks";
+import Electronics from "./component/Electronics";
+import Decorations from "./component/Decorations";
+import Men from "./component/Men.Js";
+import Women from "./component/Women";
+import Baby from "./component/BabyToys";
+import Sports from "./component/Sports";
+
+
+
 function App(){
   return(
 <BrowserRouter>
@@ -14,6 +24,13 @@ function App(){
 <Route exact path="/AdminDashbrd" element={<AdminDashboard/>}/>
 <Route exact path="/product" element={<Product/>}/>
 <Route exact path="/order" element={<Order/>}/>
+<Route exact path="/link-lists" element={<HomeLinks />} />
+<Route exact path="/electronics" element={<Electronics />}/>
+<Route exact path="/decor" element={<Decorations />}/>
+<Route exact path="/men" element={<Men />}/>
+<Route exact path="/women" element={<Women />}/>
+<Route exact path="/baby" element={<Baby />}/>
+<Route exact path="/sports" element={<Sports />}/>
 </Routes>
 </BrowserRouter>
   )
